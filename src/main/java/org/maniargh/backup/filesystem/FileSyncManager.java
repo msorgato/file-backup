@@ -89,6 +89,8 @@ public class FileSyncManager {
                         LOG.info("File '" + sourceFilePath + "' not present, copying...");
 
                         FileUtils.copyFile(sourceFile, new File(absoluteDestinationFilePath));
+                    } else {
+                        LOG.info("File '" + sourceFilePath + "' already synced");
                     }
                 }
 
