@@ -1,12 +1,13 @@
 package org.maniargh;
 
-import org.apache.commons.configuration.*;
+import org.apache.commons.configuration.CompositeConfiguration;
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.apache.commons.configuration.SystemConfiguration;
 import org.maniargh.backup.filesystem.FileSyncManager;
 import org.maniargh.exception.InvalidArgumentException;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class Launcher {
